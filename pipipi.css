@@ -1,0 +1,26 @@
+#container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    grid-template-areas:
+    "cabeza cabeza lado"
+    "principal principal lado"
+    "pie pie pie"
+    ;
+}
+header{
+grid-area: cabeza;
+background-color: blueviolet;
+}
+main{
+    grid-area: principal;
+    background-color: aquamarine;
+}
+aside {
+    grid-area: lado;
+    background-color: brown;
+}
+footer{
+    grid-area: lado;
+    background-color: bisque;
+}
